@@ -1,0 +1,109 @@
+/* calendarstyle.css */
+
+/* Style the current date */
+.react-calendar__tile--now {
+    background-color: rgb(227, 99, 99) !important;
+  }
+  
+  /* Style the selected date */
+  .react-calendar__tile--active {
+    background-color: #A62D38 !important;
+  }
+  
+
+  .react-calendar__tile--active:hover {
+    background-color: initial;
+  }
+  
+  /* calendarstyle.css */
+
+.event-marker {
+    width: 8px; /* Adjust the size of the dot as needed */
+    height: 8px; /* Adjust the size of the dot as needed */
+    background-color: #AB8D00; /* Color of the dot */
+    border-radius: 50%; /* Make it a circle */
+    margin-right: 2px; /* Center the dot */
+  }
+
+  .event-markers {
+    display: flex; /* Use Flexbox to arrange markers horizontally */
+    justify-content: center; 
+  }
+
+  
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 274px; /* Adjust the max-width as needed */
+    max-height: 297px;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    fill: red;
+  }
+
+  .react-calendar button{
+    color: black !important;
+  }
+  
+  .react-calendar__month-view__weekdays{
+    color:#A62D38 !important;
+  }
+  
+  .react-calendar__month-view__days__day--weekend{
+    color: red !important;
+  }
+  
+  .react-calendar__tile--active{
+    color: white !important;
+  }
+
+  .container {
+  display: flex;
+}
+
+  .calendar-wrapper {
+  flex: 1; /* Allow the calendar to occupy available space */
+  max-width: 250px; /* Adjust the maximum width of the calendar */
+  height: 200px; /* Set the height of the calendar */
+  border-right: 2px solid #ccc; /* Add a right border */
+  padding-right: 10px; /* Adjust the padding for spacing */
+}
+
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Allow the modal to occupy available space */
+  max-width: 600px; /* Adjust the maximum width of the modal */
+}
+
+.modal .modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 270px; /* Adjust the width of the content */
+  height: 289px;
+  max-width: 500px; /* Set a maximum width if needed */
+  max-height: 297px; /* Limit the maximum height */
+  overflow: auto; /* Enable vertical scrolling */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Ensure the event details box appears when necessary */
+.modal.active {
+  display: block;
+}

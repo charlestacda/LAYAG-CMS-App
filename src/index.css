@@ -1,0 +1,1103 @@
+
+
+:root {
+
+  color-scheme: only light !important;
+  background-color:#A62D38 !important;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
+
+.MuiBox-root.css-xyjh2a {
+  /* Ensure the container spans the full width and height */
+  width: 60%;
+  height: 60%;
+  /* Optionally, set the overflow to hidden to prevent any overflow */
+  overflow: hidden;
+}
+
+/* Style the image to fill its container */
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0;
+  border: 0;
+}
+
+
+
+body {
+  margin: 10;
+  background-color: #A62D38 !important;
+}
+
+
+/* Target elements with color-scheme: dark inline style */
+*[style*="color-scheme: light;"] {
+  /* Define your desired styles for elements with color-scheme: dark */
+  
+  background-color: #A62D38; /* Example: rgb(25, 25, 28) background color */
+}
+
+.css-cwxmpk{
+  background-color: #A62D38 !important;
+}
+
+
+/* Change the text color of the Log Out button to white */
+button.css-mszsy1-MuiButtonBase-root-MuiButton-root {
+  color: white;
+}
+
+.css-1oqqzyl-MuiContainer-root, .css-kkivoc{
+  background-color: white !important;
+}
+
+button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-colorInherit.MuiIconButton-edgeStart.MuiIconButton-sizeLarge.css-184mzhy-MuiButtonBase-root-MuiIconButton-root {
+  display: none;
+}
+
+/* Make the text red */
+.MuiAccordionSummary-root .MuiTypography-root {
+  color: #A62D38;
+}
+
+
+.css-v1nqef{
+  background-color: #FFF;
+}
+
+/* Change the color of the path element within the SVG to red */
+.MuiSvgIcon-root[data-testid="ExpandMoreIcon"] path {
+  fill: #A62D38; /* Change to the desired color */
+}
+
+/* Define the font face */
+@font-face {
+  font-family: 'Booter';
+  src: url('/src/assets/fonts/booter.otf') format('truetype'); /* Update the path */
+  /* Add other font formats if available (e.g., woff, woff2, etc.) */
+}
+
+/* Change the size and weight of the text 'LAYAG' */
+.MuiTypography-root.css-1u4zvdf-MuiTypography-root {
+  color: #FFF;
+  font-size: 2em; /* Change the font size to your preference */
+  font-weight: bold; /* Change the font weight to your preference */
+  font-family: 'Booter', sans-serif !important; 
+}
+
+.css-k1recs, .css-145qpf5{
+  color: #FFF;
+  font-size: 1.5em !important; /* Change the font size to your preference */
+  font-weight: bold !important; /* Change the font weight to your preference */
+  font-family: 'Booter', sans-serif !important; 
+}
+
+
+/* Targeting the card root */
+.MuiPaper-root.css-181iolj-MuiPaper-root {
+  /* Modify the background color of the card */
+  background-color: #A62D38; /* Change this to your desired background color */
+  color: #FFF; /* Change this to your desired text color */
+}
+
+
+/* Targeting the parent container */
+.css-1jtfysz{
+    /* Modify the background color around the SVG icon */
+    fill: #A62D38; /* Change this to your desired background color */
+    /* Add more styles as necessary */
+}
+
+.MuiBox-root.css-1yknl2z,
+.MuiBox-root.css-o9hh3a,
+.MuiButtonBase-root.MuiListItem-root.css-ke7o5n-MuiButtonBase-root-MuiListItem-root {
+    background-color: #A62D38; /* Change this to your desired background color */
+    /* Add more styles as necessary */
+}
+
+.MuiSvgIcon-root {
+  fill: #ffffff; /* Change this to your desired icon color (white in this case) */
+}
+
+/* Targeting the toolbar and changing the background color */
+.MuiToolbar-root.css-372z1e-MuiToolbar-root {
+  background-color: #A62D38; /* Change this to your desired background color */
+  /* Add more styles as necessary */
+}
+
+.MuiButtonBase-root.MuiIconButton-root {
+  color: #FFF; /* Change to the desired background color */
+}
+
+.MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.css-17k3mx9-MuiToolbar-root {
+  background-color: #A62D38; /* Change the background color */
+  /* Additional styles if needed */
+  display:none !important;
+}
+
+.MuiSvgIcon-root:focus path {
+  fill: #A62D38; /* Your desired color */
+}
+
+.MuiChip-root.MuiChip-filled.MuiChip-sizeMedium.MuiChip-colorDefault.MuiChip-filledDefault.css-6xycn2-MuiChip-root {
+  background-color: #FFF;
+  color:#A62D38;
+}
+
+
+/* Normal state */
+a[href="/c/portals"] .MuiSvgIcon-root[data-testid="AnchorIcon"] path {
+  fill: #FFFFFF; /* Your desired color */
+}
+
+/* Target only the PersonIcon SVG */
+a[href="/c/users"] .MuiSvgIcon-root[data-testid="PeopleIcon"] path {
+  fill: #FFFFFF; /* Your desired color */
+}
+
+/* Target only the PersonIcon SVG */
+a[href="/c/tips"] .MuiSvgIcon-root[data-testid="InfoIcon"] path {
+  fill: #FFFFFF; /* Your desired color */
+}
+
+/* Target only the PersonIcon SVG */
+a[href="/c/handbooks"] .MuiSvgIcon-root[data-testid="MenuBookIcon"] path {
+  fill: #FFFFFF; /* Your desired color */
+}
+
+.MuiTypography-root.MuiTypography-caption.weight-500.css-1qq0x27-MuiTypography-root {
+  color: white; /* Change this to your desired color */
+}
+
+.MuiTypography-root.MuiTypography-subtitle2 {
+  color: white;
+}
+
+.MuiTypography-root.MuiTypography-subtitle2.css-a056qj-MuiTypography-root {
+  color: white !important;
+}
+
+
+
+
+
+.css-1ofexlu, .css-vn7d5w, .css-4qd9tn, .css-1ry0yew, .css-xak6ns, .css-61tcn4, .css-zxdkgk, .css-frzbkp, .css-bqfhou, .css-1assw25, .css-opos1i, .css-14dftqf,.css-1u2vosc, .css-1fmheub{
+  border: 2px solid #A62D38 !important;
+  background-color:#dba2a780 !important;
+}
+
+.css-vtfit0, .css-1r2jkcp{
+  background-color:rgb(224, 224, 224)!important;
+}
+
+.css-a02e3l, .css-1y5tcqm{
+  background-color:white !important;
+}
+
+.css-1cw4hi4, .css-y1508d{
+  color:#0009 !important;
+}
+
+.css-1rrgmro, .css-1uiscb{
+  background-color: white !important;
+}
+
+.css-13a04ff, .css-13a04ff:hover{
+  background-color:#A62D38 !important;
+}
+
+.css-hwzhj4.Mui-checked{
+  color:#A62D38 !important;
+}
+
+.css-hwzhj4.Mui-checked + .MuiSwitch-track{
+  background-color:#A62D38 !important;
+}
+
+
+
+/* Change the color of the text in the input field */
+.MuiInputBase-input {
+  color: rgb(25, 25, 28); /* Change to the desired text color */
+}
+
+
+
+.css-1jtfysz {
+  display: none;
+}
+
+
+/* Target the path with the specific 'd' attribute and set its fill color */
+path[d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"] {
+  fill: #A62D38; /* Replace with your desired color */
+}
+
+.css-f75dfd-MuiSvgIcon-root {
+  color: white !important;
+}
+
+.css-15cbrua-MuiButtonBase-root-MuiCheckbox-root {
+  color:#A62D38 !important;
+}
+
+.css-me1rrz-MuiSvgIcon-root{
+  fill:#A62D38 !important;
+}
+
+.MuiButtonBase-root.MuiIconButton-root {
+  color:#A62D38;
+}
+
+.css-vubbuv{
+  color:#A62D38 !important;
+}
+
+.css-1ttpfjt{
+  color: white !important;
+}
+
+
+.css-1x4aju4{
+  background-color: #A62D38 !important;
+  color: white !important;
+}
+
+.css-j5qa0c{
+  background-color: white !important;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+  border-color:#A62D38 !important;
+}
+
+
+.css-1j82her-MuiButtonBase-root-MuiButton-root{
+  background-color: #A62D38 !important;
+}
+
+.css-vhr6h0-MuiButtonBase-root-MuiButton-root{
+  color: white !important;
+  background-color: #A62D38 !important;
+}
+
+.css-ooan1a{
+  color:#A62D38 !important;
+}
+
+.css-18owt1q, .css-rz03kf{
+  color:white !important;
+}
+
+.css-urf76m{
+  color: rgb(255, 23, 68) !important;
+}
+
+
+
+
+.css-7i0onk{
+  background-color: #A62D38 !important;
+  color: white !important;
+}
+
+.css-rhwl2w{
+  color:white !important;
+}
+
+.MuiBox-root.css-rhwl2w{
+  color: white !important;
+}
+
+.css-igs3ac{
+  border-color:#A62D38 !important;
+}
+
+.css-1tygh6n{
+  background-color: #A62D38 !important;
+}
+
+.css-rrdvrl-MuiButtonBase-root-MuiButton-root{
+  color:#A62D38 !important;
+}
+
+.css-lhmxlv-MuiButtonBase-root-MuiButton-root{
+  background-color: #A62D38 !important;
+  color: white !important;
+}
+
+
+/* Change the color of the Menu icon to white */
+.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium[data-testid="MenuIcon"] path {
+  fill: white;
+}
+
+
+/* Change the color of the button to white when clicked or held */
+.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium[data-testid="AnchorIcon"]:active path {
+  fill: white;
+}
+
+/* Change the color of the button to white when clicked or held */
+.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium[data-testid="InfoIcon"]:active path {
+  fill: white;
+}
+
+/* Change the color of the button to white when clicked or held */
+.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium[data-testid="MenuBookIcon"]:active path {
+  fill: white;
+}
+
+/* Change the color of the button to white when clicked or held */
+.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium[data-testid="EventAvailableIcon"]:active path {
+  fill: white;
+}
+
+.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium[data-testid="PaymentsIcon"]:active path {
+  fill: white;
+}
+
+/* Change the font color of the button text when active to the desired color */
+.css-1gohee1-MuiButtonBase-root-MuiButton-root {
+  color: #A62D38 !important;
+}
+
+.css-1gohee1-MuiButtonBase-root-MuiButton-root:disabled {
+  /* Styles for the text when button is disabled */
+  color: grey !important; /* Change the text color to grey */
+}
+
+
+/* Style to change the color of the specific SVG icon */
+.MuiSvgIcon-root[data-testid="AddIcon"] path {
+  fill: #FFF; /* Change the fill color to white */
+}
+
+/* Change font color to white */
+.css-1tyrnbp-MuiButtonBase-root-MuiButton-root {
+  color: #FFF !important;
+}
+
+/* Change button background color to red */
+.css-1tyrnbp-MuiButtonBase-root-MuiButton-root {
+  background-color: #A62D38 !important; /* Red color */
+}
+
+.css-w99l33-MuiSvgIcon-root{
+  color: white !important;
+}
+
+
+
+
+
+.MuiButtonBase-root.active {
+  background: #AB8D00 !important;
+}
+
+.MuiSvgIcon-fontSizeSmall{
+  fill:#A62D38 !important;
+}
+
+.css-1xacto5-MuiSvgIcon-root, .css-ptiqhd-MuiSvgIcon-root, .css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon{
+  fill:#A62D38 !important;
+}
+
+/* Hide scrollbar from the MuiDrawer-paper element */
+.css-1yknl2z {
+  overflow: hidden; /* Hide the scrollbar */
+  /* Webkit browsers (Chrome, Safari) */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+/* Webkit browsers (Chrome, Safari) */
+.css-1yknl2z::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+.css-15829ik-MuiTypography-root-MuiLink-root{
+  background:#A62D38 !important;
+}
+
+.MuiTypography-root.MuiTypography-inherit.MuiLink-root.MuiLink-underlineAlways.css-15829ik-MuiTypography-root-MuiLink-root, .css-1lqkzsh{
+  color: transparent !important; /* Make the text transparent */
+  display: inline-block !important; /* Ensure the background covers the entire link area */
+  padding: 8px 12px !important; /* Add padding for better visibility */
+  text-decoration: none !important; /* Remove underline */
+  pointer-events: none !important; /* Make the link non-interactive */
+  user-select: none !important; /* Disable text selection */
+  background-color: #A62D38 !important;
+}
+
+.css-fh5ypz{
+  color:white !important;
+}
+
+.css-1qf0hq9{background: #A62D38 !important;
+display: none;}
+
+.css-16se0rl{
+  background-color: #A62D38 !important;
+  color: white !important;
+}
+
+.css-1nlsh3p{
+  color: #A62D38 !important;
+}
+
+.css-1nlsh3p.Mui-disabled{
+  color: grey !important;
+}
+
+.css-vf90s5.Mui-checked, .css-vf90s5.MuiCheckbox-indeterminate{
+  color:#A62D38 !important;
+}
+
+button:disabled .MuiSvgIcon-root[data-testid=DeleteIcon] path{
+  fill: grey !important;
+}
+
+.css-tyyjhn{
+  color: white !important;
+  background-color: #A62D38 !important;
+}
+
+.css-1x52uzk{
+  display: none !important;
+}
+
+.css-bcdphh{
+  color: white !important;
+}
+
+.css-bvixg3{
+  color:#A62D38 !important;
+  background-color: white !important;
+}
+
+.css-10hi842{
+  display: none !important;
+}
+
+
+.css-ycvpt4{
+  color:#A62D38 !important;
+}
+
+.css-i4bv87-MuiSvgIcon-root{
+  color:#A62D38 !important;
+}
+
+/* In your CSS file or style section */
+.normal-button {
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.active-button {
+  background-color: #A62D38;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.css-1vpwtj8 .MuiChip-deleteIcon{
+  color:#A62D38 !important;
+}
+
+
+
+#root > div > div.MuiBox-root.css-o4k2fj > form > div > div:nth-child(6) > div > button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.css-ycvpt4{
+  display: none;
+}
+
+
+
+
+
+
+
+
+/* Dark theme **/
+
+.css-1pj389h-MuiButtonBase-root-MuiButton-root{
+  background-color: #A62D38 !important;
+}
+
+.css-1u9bqua{
+  background-color:#A62D38 !important;
+}
+
+.css-54u2xj{
+  background-color:#A62D38 !important;
+}
+
+.css-6hgxt4-MuiToolbar-root{
+  background-color: #A62D38 !important;
+}
+
+.body{
+  background-color:#A62D38 !important;
+}
+
+.css-qhix3h-MuiDrawer-docked .MuiDrawer-paper{
+  background-color:#A62D38 !important;
+}
+
+.css-qhix3h-MuiDrawer-docked{
+  background-color: #A62D38 !important;
+}
+
+.css-mzxdup{
+  background-color:#A62D38 !important;
+}
+
+.css-u3zwgl-MuiSvgIcon-root{
+  fill: white !important;
+}
+
+.css-1kpjvrp-MuiTypography-root{
+  color: white !important;
+}
+
+.css-gpjud2{
+  color:#A62D38 !important;
+  background-color: white !important;
+}
+
+.css-1u9bqua{
+  background-color:#A62D38 !important;
+}
+
+.css-1eassqr{
+  background-color: #A62D38 !important;
+}
+
+.css-1msp1z0 .MuiDrawer-paper{
+  background-color:#A62D38 !important;
+}
+
+.css-1msp1z0{
+  background-color:#A62D38 !important;
+}
+
+.css-c2vl5b{
+  background-color:white !important;
+}
+
+.css-8elalo{
+  display:none !important;
+}
+
+.css-hi4g7q{
+  background-color:rgba(0, 0, 0, 0.08) !important;
+  color: grey !important;
+}
+
+
+.css-9iedg7{
+  color: #A62D38 !important;
+}
+
+.css-u3nxv8{
+  background-color: #A62D38 !important;
+}
+
+.css-1qkal0n{
+  display: none !important;
+}
+
+.css-1jkhq6s{
+  color:white !important;
+}
+
+.css-1425sq3{
+  color: white !important;
+}
+
+.css-1bon694 .MuiChip-deleteIcon{
+  color: #A62D38 !important;
+}
+
+.css-cag08l{
+  fill: rgba(0, 0, 0, 0.26) !important;
+}
+
+.css-1bon694{
+  background-color: rgb(235, 235, 237) !important;
+  color: #A62D38 !important;
+}
+
+.css-hi4g7q:hover{
+  background-color: rgb(224, 224, 224) !important; 
+}
+
+.css-1snmimi{
+  background-color: rgb(248, 248, 250) !important;
+}
+
+.css-jntu7h{
+  background-color: rgb(248, 248, 250) !important;
+}
+
+.css-azl7eq{
+  background-color: rgb(248, 248, 250) !important;
+}
+
+.css-9ec6ri{
+  background-color:rgb(248, 248, 250) !important;
+}
+
+.css-1ojqt4d{
+  background-color: rgb(248, 248, 250) !important;
+}
+
+.css-tvf52d{
+  background-color:rgb(240,240,242)!important;
+}
+
+.css-1svag5n.Mui-disabled{
+  color: grey !important;
+}
+
+
+.css-y47wsh{
+  fill:#A62D38 !important;
+}
+
+.css-1jjbn9{
+  color:rgb(25, 25, 28) !important;
+  background-color:white !important;
+}
+
+.css-1fkqvj8{
+  color:grey !important;
+}
+
+.css-iz5thy,.css-1gptj6p{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.26) !important;
+}
+
+.css-1gptj6p{
+  background-color:rgba(0, 0, 0, 0.05) !important
+}
+
+.css-19opehc{
+  background-color:white !important;
+}
+
+
+.css-mj521t{
+  fill:#A62D38 !important;
+}
+
+.css-bxqx36{
+  color:grey !important;
+}
+
+.css-k6tkgv.mono{
+  color:#A62D38 !important;
+}
+
+.css-1ns0wio{
+  color:#A62D38 !important;
+}
+
+.css-r3zq2e{
+  background-color: white !important;
+  color: rgb(18, 18, 21) !important;
+}
+
+.css-1sidimu{
+  color:grey !important;
+}
+
+.css-1kcys56{
+  background-color: rgb(240,240,242)!important
+}
+
+.css-1hg36fn{
+  background-color: rgb(240,240,242)!important;
+  color: #0009!important;
+}
+
+.css-15wajkn{
+  color: grey !important;
+}
+
+.css-tvf52d:hover{
+  background-color:rgb(240,240,242)!important;
+}
+
+.css-mdyc15{
+  color:rgba(0, 0, 0, 0.26) !important;
+}
+
+.css-ntyfco{
+  color:grey !important;
+}
+
+.css-15tfbcd{
+  color:grey !important;
+}
+
+.css-tvf52d{
+  color:#0009!important
+}
+
+.css-1krj699{
+  background-color:rgb(245, 245, 245) !important;
+}
+
+.css-kbfjym{
+  background-color:white !important;
+}
+
+
+.css-1svag5n{
+  color:#A62D38 !important;
+}
+
+.css-enl45w{
+  background-color:#A62D38 !important;
+  color:white !important;
+}
+
+.css-enl45w:hover{
+  background-color:#A62D38 !important;
+}
+
+.css-1g3znfd{
+  fill:grey !important;
+}
+
+.css-azrx1{
+  background-color:white !important;
+  color:rgb(25, 25, 28) !important;
+}
+
+.css-zr9gf8{
+  background-color: white !important;
+}
+
+.css-12t22ix{
+  color: rgb(25, 25, 28) !important;
+}
+
+.css-17rzsdu, .css-12ktgrw.StorageUploadField-dropZone, .css-12ktgrw.StorageUploadField-nonActiveDrop:hover{
+  background-color: rgba(0, 0, 0, 0.06) !important;
+}
+
+.css-1uiscb{
+  color:rgb(25, 25, 28) !important;
+}
+
+.css-1s8pih7.Mui-disabled{
+  -webkit-text-fill-color: rgb(178, 178, 178) !important;
+}
+
+.css-jj5s04.Mui-disabled{
+  color: rgb(178, 178, 178) !important;
+}
+
+.css-1l929uh.Mui-disabled{
+  color: rgb(178, 178, 178) !important;
+}
+
+.css-1mtsuo7{
+  color:#A62D38 !important;
+  background-color:white !important;
+}
+
+.css-1l929uh{
+  color:rgba(0, 0, 0, 0.6) !important;
+}
+
+.css-12z8vpj, .css-1ce7r9i.Mui-focused,.css-qggz4d-focused,.css-1mmlc6n,.css-1ce7r9i{
+  color:#0009!important
+}
+
+
+.css-1mnbbxy{
+  background-color: white !important;
+}
+
+.css-koavf2, .css-1ok14cx{
+  background: rgb(240, 240, 242) !important;
+}
+
+.css-1hhva8t{
+  background: rgb(224, 224, 224) !important;
+}
+
+.css-kwpt08{
+  color:rgb(25, 25, 28) !important;
+}
+
+.css-koavf2:hover{
+  background-color:rgb(240, 240, 242) !important;
+}
+
+.css-azrx1.Mui-selected{
+  background-color: rgb(248, 248, 250) !important;
+}
+
+.css-96a3g{
+  color:#A62D38 !important;
+}
+
+#root > div > div.MuiBox-root.css-o4k2fj > form > div > div:nth-child(6) > div > button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.css-96a3g{
+  display: none;
+}
+
+.css-1e3g4o9{
+  background-color:rgb(255, 255, 255) !important;
+  color:rgb(18, 18, 21) !important;
+}
+
+.css-mgkq0b{
+  color:rgb(32, 32, 36) !important;
+}
+
+.css-1yxef6n{
+  color:rgb(255, 255, 255) !important;
+  background-color:#A62D38 !important;
+}
+
+
+.css-qggz4d{
+  color:rgba(0, 0, 0, 0.6) !important;
+}
+
+.css-azrx1:hover{
+  background-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+.css-nqlg3w{
+  border-color:#A62D38 !important;
+}
+
+.css-1pgqv0c{
+  color:rgb(25, 25, 28) !important;
+}
+
+.css-uznwwz{
+  background-color:#A62D38 !important;
+}
+
+.css-1k33q06{
+  fill:#A62D38 !important;
+}
+
+.css-y47wsh{
+  fill: rgba(0, 0, 0, 0.26) !important
+}
+
+.css-1brgiv7{
+  background-color:rgb(235, 235, 237) !important;
+}
+
+.css-1tppequ:hover{
+  background-color:rgb(235, 235, 237) !important;
+}
+
+.css-1tppequ.Mui-selected{
+  background-color:rgb(178, 178, 178) !important;
+}
+
+.css-kqpz4v{
+  background-color:rgb(178, 178, 178) !important;
+}
+
+.css-12fvpbk, .css-lpbcm2, .css-lpbcm2, .css-csjgl9,.css-ru2cgz,.css-10pyf5o,.css-1sozc2h,.css-1rhchh9,.css-1gawlzx, .css-13oy27h, .css-g7vdpu,.css-eudqih,.css-qkcip4,.css-1bjcitb,.css-1mur8go,.css-aab3c9,.css-1knxdvl{
+  background-color: #dba2a780!important;
+  border: 2px solid #A62D38!important;
+}
+
+.css-qpo10c{
+  background-color:white !important;
+}
+
+.css-136lbrj{
+  color:rgb(25, 25, 28) !important;
+}
+
+.css-mi86yv{
+  color: #0009!important;
+}
+
+.css-16njpl0, .css-16njpl0:hover, .css-dta3fo{
+  background-color: rgb(235, 235, 237) !important;
+
+}
+
+.css-m9min2.Mui-disabled{
+  background-color: rgb(235, 235, 237) !important;
+}
+
+.css-jj5s04{
+  color: #0009!important;
+}
+
+.css-6wepjq{
+  color:rgb(25, 25, 28) !important;
+}
+
+.css-1brgiv7, .css-l6rx6h, .css-8t7su3, .css-j5mts0, .css-5dgzyz, .css-1td1qzv, .css-yym9xl, .css-8zdsp, .css-1qi3igb, .css-am8qw9{
+  background-color: transparent !important;
+}
+
+.MuiGrid-root.MuiGrid-container.MuiGrid-wrap-xs{
+  background-color: #f8f8fa!important
+}
+
+.MuiGrid-root.MuiGrid-container.MuiGrid-wrap-xs-nowrap{
+  background-color: #f8f8fa!important
+}
+
+.css-96a3g.Mui-disabled{
+  background-color: white;
+}
+
+.css-1vgbs7b{
+  background-color:white !important;
+  color:#A62D38 !important;
+}
+
+.css-1w6mzgi{
+  color: rgb(18, 18, 21) !important;
+}
+
+.css-4u2990{
+  background-color:rgb(224, 224, 224) !important;
+  color:rgb(18, 18, 21) !important;
+}
+
+.css-k7bri4{
+  background-color:#A62D38 !important;
+  color:white !important;
+}
+
+.css-k7bri4:not(.Mui-selected){
+  border: 1px solid #a62d38 !important;
+}
+
+.css-4u2990:hover{
+  background-color:#A62D38 !important;
+}
+
+.css-1ds7vx0{
+  background-color:#A62D38 !important;
+}
+
+.css-8bu8k6, .css-15ayudt{
+  background-color: #A62D38 !important;
+  border:16px solid #a62d38 !important;
+}
+
+.css-13wi2uz, .css-g29i4g{
+  background-color: #A62D38 !important;
+}
+
+.css-ohwxqj{
+  background: #f8f8fa!important;
+}
+
+.css-16afvhe.Mui-selected{
+  color:white !important;
+}
+
+.css-1e7nux2, .css-jsehsv{
+  display:none !important;
+}
+
+.css-16afvhe{
+  color:rgb(18, 18, 21) !important;
+}
+
+.css-u4zeta{
+  color:rgb(25, 25, 28) !important;
+  background-color: white !important;
+}
+
+.css-qpo10c{
+  color:rgb(25, 25, 28) !important;
+}
+
+.css-qx19y9, .css-yop3gh, .css-cvkmk2{
+  color:rgb(25, 25, 28) !important;
+}
+
+.css-gofjbs{
+  fill:rgb(25, 25, 28) !important;
+}
+
+.css-2keg7y{
+  background-color:rgb(224, 224, 224)!important;
+}
+
+/* Set the button's background color to white */
+.MuiBox-root a[aria-label="Open image in new tab"] button {
+  background-color: white !important;
+}
+
+.css-6wepjq.Mui-disabled{
+  -webkit-text-fill-color: rgb(178, 178, 178) !important;
+}
+
+.css-1s30457{
+  background-color: white !important;
+  color: #A62D38 !important;
+}
+
+.css-zpgk5o{
+  color: rgb(18, 18, 21) !important;
+}
+
+
+
+#root > div > div.MuiBox-root.css-o4k2fj > form > div > div.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.css-10238ch-MuiGrid-root > h6{
+  color:#A62D38 !important;
+}
+
+.css-yem0l2-MuiPopper-root-MuiTooltip-popper{
+  display: none !important;
+}
+
+.react-calendar button{
+  color: black !important;
+}
+
+.react-calendar__month-view__weekdays{
+  color:#A62D38 !important;
+}
+
+.react-calendar__month-view__days__day--weekend{
+  color: red !important;
+}
+
+.react-calendar__tile--active{
+  color: white !important;
+}
+
+.css-c2vl5b{
+  overflow: hidden !important;
+}
