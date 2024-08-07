@@ -36,8 +36,15 @@ export const helpCollection = buildCollection<Help>({
                         name: "Image",
                         storage: {
                             storagePath: "help",
-                            acceptedFiles: ["image/*"]
-                        }
+                            acceptedFiles: ["image/*"],
+                            storeUrl: true,
+                            metadata: {
+                                cacheControl: "max-age=1000000"
+                            },
+                            fileName: (context) => {
+                                return context.file.name;
+                            }
+                        },
                     },
                     text: {
                         dataType: "string",

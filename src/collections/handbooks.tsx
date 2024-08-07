@@ -12,7 +12,7 @@ interface Handbook {
 
 export const handbooksCollection = buildCollection<Handbook>({
     path: 'handbooks', // Path to your Firestore collection
-    name: 'Handbook',
+    name: 'Handbooks',
     group: "LAYAG App",
     icon: "MenuBook",
     properties: {

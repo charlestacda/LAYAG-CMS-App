@@ -11,15 +11,12 @@ interface Event {
     visibleToStudents: boolean;
     visibleToEmployees: boolean;
     archived: boolean;
-    isTomorrow: boolean;
-    isLater: boolean;
-    isOngoing: boolean;
 
 }
 
 export const eventsCollection = buildCollection<Event>({
     path: 'events', // Path to your Firestore collection
-    name: 'Event',
+    name: 'Events',
     group: "LAYAG App",
     icon: "EventAvailable",
     initialSort: ["startDateTime", "asc"],
@@ -78,22 +75,6 @@ export const eventsCollection = buildCollection<Event>({
             dataType: 'boolean',
             defaultValue: false
         }),
-        isTomorrow: buildProperty({
-            name: 'Is Tomorrow',
-            dataType: 'boolean',
-            defaultValue: false
-        }),
-        isLater: buildProperty({
-            name: 'Is Later',
-            dataType: 'boolean',
-            defaultValue: false
-        }),
-        isOngoing: buildProperty({
-            name: 'Is Ongoing',
-            dataType: 'boolean',
-            defaultValue: false
-        }),
-        
     },
     // Add other configuration options like callbacks, permissions, etc.
 });

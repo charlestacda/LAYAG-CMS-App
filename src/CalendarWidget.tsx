@@ -3,9 +3,13 @@ import Calendar from 'react-calendar';
 import moment from 'moment';
 import 'react-calendar/dist/Calendar.css';
 import '../src/calendarstyle.css';
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, doc, getDoc, getDocs } from 'firebase/firestore';
 import { getFirestore } from 'firebase/firestore';
 import EventBusyIcon from '@mui/icons-material/EventBusy';
+import firebase from 'firebase/compat/app';
+import { firebaseConfig } from './firebase-config.ts';
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
 
 interface MyEvent {
   eventTitle: string;
@@ -15,6 +19,10 @@ interface MyEvent {
   eventLocation: string;
   // Add other event properties if needed
 }
+
+const firebaseApp = initializeApp(firebaseConfig);
+const firestore = getFirestore(firebaseApp);
+const auth = getAuth(firebaseApp);
 
 type ValuePiece = Date | null;
 
@@ -30,10 +38,11 @@ const EventCalendar = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const querySnapshot = await getDocs(collection(firestore, 'events'));
+        // Fetch events from the 'events' collection
+        const eventsQuerySnapshot = await getDocs(collection(firestore, 'events'));
         const fetchedEvents: MyEvent[] = [];
 
-        querySnapshot.forEach((doc) => {
+        eventsQuerySnapshot.forEach((doc) => {
           const eventData = doc.data();
           const startDateTime = eventData.startDateTime.toDate();
           const endDateTime = eventData.endDateTime.toDate();
@@ -44,9 +53,40 @@ const EventCalendar = () => {
             eventStart: startDateTime,
             eventEnd: endDateTime,
             eventLocation: eventData.location,
-            // Map other fields accordingly
           });
         });
+
+        // Fetch todo list data from the 'todo_list' collection
+        const currentUser = auth.currentUser;
+        if (currentUser) {
+          const todoListDocRef = doc(firestore, 'todo_list', currentUser.uid);
+          const todoListDocSnapshot = await getDoc(todoListDocRef);
+
+          if (todoListDocSnapshot.exists()) {
+            const todoLists = todoListDocSnapshot.data();
+
+            // Iterate through the todo lists
+            Object.keys(todoLists).forEach((todoListName) => {
+              const todoList = todoLists[todoListName];
+
+              // Parse deadlineDate string into a Date object
+              const deadlineDate = moment(todoList.deadlineDate, 'YYYY-MM-DD h:mm A').toDate();
+
+              if (!isNaN(deadlineDate.getTime())) {
+                // Create events based on todo list data
+                fetchedEvents.push({
+                  eventTitle: todoList.todoTask,
+                  eventDesc: todoList.todoStatus,
+                  eventStart: deadlineDate,
+                  eventEnd: deadlineDate,
+                  eventLocation: todoList.todoTask,
+                });
+              } else {
+                console.warn(`Invalid deadlineDate in todoList: ${JSON.stringify(todoList)}`);
+              }
+            });
+          }
+        }
 
         setEvents(fetchedEvents);
       } catch (error) {
@@ -111,35 +151,35 @@ const EventCalendar = () => {
 
   return (
     <div className="container">
-    <div className="calendar-wrapper">
-      <Calendar
-        onChange={handleDateChange}
-        value={selectedDate}
-        tileContent={eventTileContent} // Include the event markers
-        // Add other props and configurations as needed
-      />
-    </div>
+      <div className="calendar-wrapper">
+        <Calendar
+          onChange={handleDateChange}
+          value={selectedDate}
+          tileContent={eventTileContent}
+        />
+      </div>
 
-    <div className="modal" style={{ display: showEventDetails ? 'block' : 'none' }}>
-    <div className="modal-content">
-      <h3 style={{ color: "#A62D38" }}>Event Details</h3>
-      {/* Display event details here */}
-      {selectedEvents.length > 0 ? (
-        selectedEvents.map((event, index) => (
-          <div key={index}>
-            <h4>{event.eventTitle}</h4>
-            <p><strong>Start Date:</strong> {moment(event.eventStart).format('MMMM Do, YYYY')}</p>
-            <p><strong>End Date:</strong> {moment(event.eventEnd).format('MMMM Do, YYYY')}</p>
-            <p><strong>Location:</strong> {event.eventLocation}</p>
-            {/* Render other event details */}
-          </div>
-        ))
-      ) : (
-        <p>No events for the selected date</p>
-      )}
+      <div className="modal" style={{ display: showEventDetails ? 'block' : 'none' }}>
+        <div className="modal-content">
+          <h3 style={{ color: "#A62D38" }}>Event Details</h3>
+          {/* Display event details here */}
+          {selectedEvents.length > 0 ? (
+            selectedEvents.map((event, index) => (
+              <div key={index}>
+                <h4>{event.eventTitle}</h4>
+                <p>Description: {event.eventDesc}</p>
+                <p>Start Date: {moment(event.eventStart).format('MMMM Do, YYYY')}</p>
+                <p>End Date: {moment(event.eventEnd).format('MMMM Do, YYYY')}</p>
+                {/* Render other event details */}
+                {index < selectedEvents.length - 1 && <hr />} {/* Add a line if not the last event */}
+              </div>
+            ))
+          ) : (
+            <p>No events for the selected date</p>
+          )}
+        </div>
+      </div>
     </div>
-  </div>
-</div>
   );
 };
 

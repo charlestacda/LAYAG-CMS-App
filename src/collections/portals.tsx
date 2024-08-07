@@ -14,7 +14,7 @@ interface Portal {
 
 export const portalsCollection = buildCollection<Portal>({
   path: 'portals', // Path to your Firestore collection
-  name: 'Portal',
+  name: 'Portals',
   group: "LAYAG App",
   icon: "Anchor",
   initialSort: ["dateEdited", "asc"],
@@ -44,12 +44,12 @@ export const portalsCollection = buildCollection<Portal>({
       validation: { required: true }
     }),
     color: buildProperty({
-      name: 'Color',
+      name: 'Type',
       dataType: 'string',
       enumValues: [
         {
             id: "#a62d38",
-            label: "Red",
+            label: "Main",
             color: {
                 color: "#a62d38",
                 text: "#FFFFFF",
@@ -57,7 +57,7 @@ export const portalsCollection = buildCollection<Portal>({
         },
         {
             id: "#a42d6d",
-            label: "Purple",
+            label: "ARC Online Resources",
             color: {
                 color: "#a42d6d",
                 text: "#FFFFFF",
@@ -65,7 +65,7 @@ export const portalsCollection = buildCollection<Portal>({
         },
         {
             id: "#00a62d",
-            label: "Green",
+            label: "Payment Channels",
             color: {
               color: "#00a62d",
               text: "#FFFFFF",
@@ -73,17 +73,9 @@ export const portalsCollection = buildCollection<Portal>({
           },
           {
             id: "#2da6a6",
-            label: "Teal",
+            label: "Admin Links",
             color: {
               color: "#2da6a6",
-              text: "#FFFFFF",
-            }
-          },
-          {
-            id: "#ff5733",
-            label: "Orange",
-            color: {
-              color: "#ff5733",
               text: "#FFFFFF",
             }
           },

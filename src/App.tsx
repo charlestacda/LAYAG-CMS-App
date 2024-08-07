@@ -28,6 +28,7 @@ import { initializeApp } from "firebase/app";
 import  DashboardView  from "./DashboardView.tsx";
 import  InfoPage  from "./InfoPage.tsx";
 import HomePage from "./HomePage.tsx";
+import ImportExport from "./ImportExport.tsx";
 
 
 
@@ -72,7 +73,7 @@ export default function App() {
         });
 
         if (users.length === 1) {
-            // If a user with the specified email and userType 'Admin' exists, grant access
+            // If a user with the specified email and userType 'Admin' and 'Super Admin' exists, grant access
             authController.setExtra(["admin"]);
             return true; // Allow access for admin users
         } else {
@@ -106,6 +107,14 @@ export default function App() {
         icon: 'Info',
         view: <InfoPage/>
     }];
+
+    const importexportPage: CMSView[] = [{
+        path: "import_export",
+        name: "Import/Export",
+        group: 'LAYAG App',
+        icon: 'ImportExport',
+        view: <ImportExport/>
+    }];
     
 
     return <FirebaseCMSApp
@@ -124,7 +133,7 @@ export default function App() {
         firebaseConfig={firebaseConfig}
         primaryColor={primaryColor}
         secondaryColor={secondaryColor}
-        views={infoPage}
+        views={[...infoPage, ...importexportPage]}
         HomePage={DashboardView}
         autoOpenDrawer
     />;

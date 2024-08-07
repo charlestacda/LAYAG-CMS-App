@@ -8,7 +8,7 @@ import PolicyIcon from '@mui/icons-material/Policy';
 const InfoPage = () => {
   const cards = [
     { title: 'Contact Info', icon: <ContactPhoneIcon style={{ fontSize: 80, fill: 'white' }} />, link: '/c/contact_info' },
-    { title: 'Help Page', icon: <HelpIcon style={{ fontSize: 80, fill: 'white' }} />, link: '/c/help' },
+    { title: 'Help Info', icon: <HelpIcon style={{ fontSize: 80, fill: 'white' }} />, link: '/c/help' },
     { title: 'Payment Channels', icon: <PaymentsIcon style={{ fontSize: 80, fill: 'white' }} />, link: '/c/payment_procedures' },
     { title: 'Privacy Policy', icon: <PolicyIcon style={{ fontSize: 80, fill: 'white' }} />, link: '/c/privacy_policy' },
   ];

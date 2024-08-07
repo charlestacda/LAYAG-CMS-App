@@ -18,10 +18,6 @@ export const usersCollection = buildCollection<User>({
     name: 'Users',
     group: 'LAYAG App',
     icon: "People",
-    permissions:{
-        edit: false,
-        delete: false,
-    },
     initialSort: ["userFirstName", "asc"],
     properties: {
         userProfile: buildProperty({
